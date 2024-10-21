@@ -1,0 +1,12 @@
+@import url("./Header.css");
+@import url("./Home.css");
+@import url("./About.css");
+@import url("./Form.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
