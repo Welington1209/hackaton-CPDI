@@ -16,9 +16,35 @@
         <h1>Home</h1>
       </section>
       <section id="about"><h1>Sobre</h1></section>
-      <section id="form"><h1>Formulário</h1></section>
+      <section id="form">
+        <div class="quiz-container">
+          <h2 id="question-title">Pergunta</h2>
+          <div id="options-container"></div>
+          <button id="help-button" onclick="useHelp()">
+            Excluir uma opção errada
+          </button>
+          <p id="feedback"></p>
+          <p id="score">Pontuação: 0</p>
+          <button
+            id="next-button"
+            onclick="nextQuestion()"
+            style="display: none"
+          >
+            Próxima pergunta
+          </button>
+          <button
+            id="restart-button"
+            onclick="restartQuiz()"
+            style="display: none"
+          >
+            Reiniciar Quiz
+          </button>
+        </div>
+      </section>
     </main>
 
     <footer id="footer"></footer>
+    <script src="./src/scripts/questions.js"></script>
+    <script src="./src/scripts/index.js"></script>
   </body>
 </html>
