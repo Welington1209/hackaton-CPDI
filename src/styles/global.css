@@ -4,9 +4,53 @@
 @import url("./Form.css");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  max-width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-shape-divider-top-1729594422 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1729594422 svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 40%;
+}
+
+.custom-shape-divider-top-1729593848 .shape-fill {
+  fill: #ffffff;
+}
+
+.quiz-container {
+  width: 600px;
+  height: 500px;
+  border-radius: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }

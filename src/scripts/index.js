@@ -32,6 +32,15 @@ const checkAnswer = (isCorrect) => {
   const options = document.querySelectorAll(".option");
   options.forEach((option) => {
     option.disabled = true;
+    option.style.opacity = 0.5;
+
+    option.style.cursor = "default";
+
+    if (isCorrect) {
+      option.style.backgroundColor = "green";
+    } else {
+      option.style.backgroundColor = "red";
+    }
   });
 
   nextButton.style.display = "inline";

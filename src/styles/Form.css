@@ -1,5 +1,35 @@
+#form {
+  position: relative;
+  padding-top: 10%; 
 
-
-#next-button {
-    display: none;
 }
+
+#options-container {
+  height: 200px;
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: .5rem;
+  border: 1px solid;
+}
+
+.option {
+    border: 1px solid;
+    color: #000;
+}
+
+.option:first-child {
+    background-color: rgba(0, 0, 255, 0.389);
+}
+.option:last-child {
+    background-color: rgba(255, 0, 255, 0.389);
+}
+.option:nth-child(2) {
+    background-color: rgba(212, 255, 0, 0.389);
+}
+.option:nth-child(3) {
+    background-color: rgba(0, 255, 247, 0.389);
+}
+
+
+
