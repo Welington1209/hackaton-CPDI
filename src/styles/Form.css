@@ -1,35 +1,61 @@
 #form {
   position: relative;
-  padding-top: 10%; 
-
+  padding-top: 10%;
 }
 
 #options-container {
-  height: 200px;
-  width: 400px;
+  height: 250px;
+  width: 450px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border-radius: .5rem;
-  border: 1px solid;
+  border-radius: 0.5rem;
+  padding: 1rem;
 }
 
 .option {
-    border: 1px solid;
-    color: #000;
+  border: 1px solid;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: 0.5s;
+}
+
+.option:hover {
+  scale: 1.1;
 }
 
 .option:first-child {
-    background-color: rgba(0, 0, 255, 0.389);
+  background-color: rgba(0, 0, 255, 0.389);
 }
 .option:last-child {
-    background-color: rgba(255, 0, 255, 0.389);
+  background-color: rgba(255, 0, 255, 0.389);
 }
 .option:nth-child(2) {
-    background-color: rgba(212, 255, 0, 0.389);
+  background-color: rgba(212, 255, 0, 0.389);
 }
 .option:nth-child(3) {
-    background-color: rgba(0, 255, 247, 0.389);
+  background-color: rgba(0, 255, 247, 0.389);
 }
 
+@media (max-width: 450px) {
+  #form {
+    padding-top: 20%;
+  }
+  .quiz-container {
+    padding: 1rem;
+    max-width: 100%;
+    align-items: center;
+  }
 
+  .quiz-container h2 {
+    text-align: center;
+  }
 
+  #options-container {
+    max-width: 100%;
+  }
+
+  .option {
+    font-size: 1rem;
+  }
+}
