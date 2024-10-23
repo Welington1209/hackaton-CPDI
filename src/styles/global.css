@@ -30,6 +30,7 @@ section {
   top: 0;
   left: 0;
   width: 100%;
+  height: 180px;
   overflow: hidden;
   line-height: 0;
 }
@@ -38,7 +39,7 @@ section {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 192px;
+  height: 150px;
 }
 
 .custom-shape-divider-top-1729615361 .shape-fill {
@@ -53,6 +54,19 @@ section {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.button {
+  padding: 1rem;
+  border-radius: 0.2rem;
+  font-weight: bold;
+  border: 1px solid;
+  transition: 1s;
+  background-color: #8cbdc2;
+}
+
+.button:hover {
+  scale: 1.1;
 }
 
 @media (max-width: 400px) {

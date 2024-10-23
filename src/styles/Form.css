@@ -1,15 +1,33 @@
 #form {
   position: relative;
-  padding-top: 10%;
+  padding-top: 150px;
 }
 
 #options-container {
-  height: 250px;
-  width: 450px;
+  height: 370px;
+  width: 490px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-radius: 0.5rem;
   padding: 1rem;
+  gap: 0.6rem;
+}
+
+#feedback-container {
+  height: 350px;
+  width: 472px;
+  border-radius: 0.5rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#feedback-container p {
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .option {
@@ -18,6 +36,9 @@
   font-weight: bold;
   font-size: 1.1rem;
   transition: 0.5s;
+  padding: 0.5rem;
+  animation: blink 3s;
+  border-radius: 0.5rem;
 }
 
 .option:hover {
@@ -38,13 +59,15 @@
 }
 
 @media (max-width: 450px) {
-  #form {
-    padding-top: 20%;
+  #feedback-container {
+    max-width: 100%;
+    margin-bottom: 1rem;
   }
   .quiz-container {
     padding: 1rem;
     max-width: 100%;
     align-items: center;
+    min-height: 70vh;
   }
 
   .quiz-container h2 {
@@ -58,4 +81,32 @@
   .option {
     font-size: 1rem;
   }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.option:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.option:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.option:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.option:nth-child(4) {
+  animation-delay: 3s;
 }
